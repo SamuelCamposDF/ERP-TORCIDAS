@@ -61,16 +61,13 @@ include 'Model/conexoes.php';
 
 <body class="bg-light">
 
-	<header class="navbar bg-white navbar-expand-md text-white fixed-top navbar-dark bd-navbar">
-		<a class="btn btn-dark mx-3" data-bs-toggle="offcanvas" href="#offcanvasScrolling" role="button" aria-controls="offcanvasExample">
-			Menu
-		</a>
-	</header>
-
-	<div class="container">
+	<div class="container-fluid">
+		<button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
 		<div class="row">
+
 			<div style="height: 100%;" class="col-md-2 col-12">
-				<div style="width: 250px;" class="offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+
+				<div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
 					<div class="offcanvas-header">
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 					</div>
@@ -121,6 +118,7 @@ include 'Model/conexoes.php';
 					</div>
 				</div>
 			</div>
+
 
 			<div class="col ms-4">
 
